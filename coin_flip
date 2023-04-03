@@ -28,31 +28,32 @@ def coin_flip():
     print('The number of tails is: ' + str(total_tails))
     print('The number of heads is: ' + str(total_heads))
         
-    
- while True:
-    
-    # opening statement
-    print('Hi there, welcome to coin flip!')
-    game_on = True
-        
-    while game_on:
-        
-        numb = coin_flip()
-    
-        the_flip(numb)
-        
-        break
-        
-    new_game = input('Would you like to flip again?: Y/N')
-    
-    if new_game[0].upper() == 'Y':
+ def main():
+     while True:
+
+        # opening statement
+        print('Hi there, welcome to coin flip!')
         game_on = True
-        continue
-    elif new_game[0].upper() != 'Y':
-        print('Thanks for flipping!')
-        break
-    
-            
-        
-        
-        
+
+        while game_on:
+
+            numb = coin_flip()
+
+            the_flip(numb)
+
+            break
+
+        new_game = input('Would you like to flip again?: Y/N')
+
+        if new_game[0].upper() == 'Y':
+            game_on = True
+            continue
+        elif new_game[0].upper() != 'Y':
+            print('Thanks for flipping!')
+            break
+
+if __name__ == "__main__":
+    main();
+
+
+
