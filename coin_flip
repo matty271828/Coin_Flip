@@ -29,7 +29,7 @@ def coin_flip():
     print('The number of heads is: ' + str(total_heads))
         
     
-    while True:
+ while True:
     
     # opening statement
     print('Hi there, welcome to coin flip!')
